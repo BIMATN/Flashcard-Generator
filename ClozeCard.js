@@ -1,5 +1,8 @@
 //This File is my clozer logic
 function clozeCard (text, cloze) {
+	if(!(this instanceof clozeCard)){
+		return new clozeCard(text, cloze);
+	}
 	this.fullText = text;
 	this.cloze = cloze;
 	this.partial = function(){
@@ -14,3 +17,6 @@ function clozeCard (text, cloze) {
 	};
 }
 module.exports = clozeCard;
+let card1 = new clozeCard('The rain in Spain falls mainly in the plains', 'falls mainly in the plains');
+console.log(card1);
+console.log(card1.partial());
