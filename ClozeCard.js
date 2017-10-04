@@ -17,6 +17,6 @@ function clozeCard (text, cloze) {
 	};
 }
 module.exports = clozeCard;
-let card1 = new clozeCard('The rain in Spain falls mainly in the plains', 'falls mainly in the plains');
+/*let card1 = new clozeCard('The rain in Spain falls mainly in the plains', 'falls mainly in the plains');
 console.log(card1);
-console.log(card1.partial());
+console.log(card1.partial());*/

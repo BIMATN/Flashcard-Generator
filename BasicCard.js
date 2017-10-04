@@ -7,5 +7,5 @@ function basicCard (front, back){
 	this.back = back;
 }
 module.exports = basicCard;
-let card1 = basicCard('front', 'back');
-console.log(card1);
+/*let card1 = basicCard('front', 'back');
+console.log(card1);*/
